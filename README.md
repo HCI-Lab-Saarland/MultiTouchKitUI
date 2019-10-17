@@ -9,7 +9,7 @@ This is a Processing library for Multi Touch Kit. For more information on the pr
 - [OpenCV for Processing](https://github.com/atduskgreg/opencv-processing)
 
 ### Installing
-Download the zip folder and unpack it in your Processing Libraries folder. ( ../Documents/Processing/Libraries)
+Download the zip folder and unpack it in your Processing Libraries folder. ( ../Documents/Processing/Libraries/MultiTouchKitUI)
 Make sure to restart processing after doing so.
 
 ### Setting the index of serial port
