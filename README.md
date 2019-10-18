@@ -1,4 +1,4 @@
-# Multi Touch Kit Processing
+# Multi Touch Kit Processing Library
 
 This is a Processing library for Multi Touch Kit. For more information on the project and tutorial, visit our [website](https://hci.cs.uni-saarland.de/multi-touch-kit/).
 
