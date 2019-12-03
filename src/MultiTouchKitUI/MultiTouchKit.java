@@ -566,19 +566,19 @@ public class MultiTouchKit {
 		parent.colorMode(parent.RGB, colorrange); 
 		img.loadPixels();
 
-		for (int i = 0; i < tx; i++) {
-			for (int j = 0; j < rx; j++) {
+		for (int i = 0; i < rx; i++) {
+			for (int j = 0; j < tx; j++) {
 
 				if (baseLineSet == false) {
-					BaseLine[i][j] = (BaseLine[i][j] + rawValues[i][j]);
+					BaseLine[i][j] = (BaseLine[i][j] + rawValues[j][i]);
 					bt_average[i][j] = bt_average[i][j] + 1;
 				} else {
-					if(calibrationErrorThreshold > rawValues[i][j] - BaseLine[i][j]) {
+					if(calibrationErrorThreshold > rawValues[j][i] - BaseLine[i][j]) {
 						calibrationError = true;
 					}
-					float value = parent.max(0, rawValues[i][j] - BaseLine[i][j]);
+					float value = parent.max(0, rawValues[j][i] - BaseLine[i][j]);
 
-					values[i][j] = (int) value;
+					values[j][i] = (int) value;
 
 				}
 			}
